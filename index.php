@@ -36,7 +36,9 @@
             <?php
 
             foreach ($resultat as $book) {
-                echo "<tr><td><a href='show_book.php?id=" . $book['id'] . "'>" . $book['title'] . "</a></td><td>" . $book['writer'] . "</td></tr>";
+                echo "<tr><td><a href='show_book.php?id=" . $book['id'] . "'>" . $book['title'] . "</a></td><td>" .
+                    $book['writer'] . "</td><td><a href='update_form_book.php?id=" . $book['id'] .
+                    "'>Modifier le livre</a></td></tr>";
             }
 
             ?>
